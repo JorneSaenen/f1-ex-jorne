@@ -23,7 +23,7 @@ export const getRaces = async (req: Request, res: Response) => {
               format === "true"
                 ? formatTime(raceResult.time, raceResult.position)
                 : raceResult.time,
-            driver: {
+            driver_info: {
               ...driver,
               flag: getFlagUrl(driver!.countryCode),
             },
